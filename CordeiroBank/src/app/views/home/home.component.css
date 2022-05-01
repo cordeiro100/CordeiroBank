@@ -30,3 +30,85 @@ ul {
     object-fit: cover;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.emprestimos{
+    border: 0px solid;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    background-color: rgb(0, 131, 20);
+    border-radius: 8px;
+    font-family: 'Goldman', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.emprestimos:hover{
+
+    border: 8px solid;
+    border-color: rgb(174, 180, 0);
+}
+
+.emprestimos img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.emprestimos a {
+    color: white;
+    text-decoration: underline;
+   
+}
+
+.emprestimos h2{
+    margin-top: 14px;
+}
+
+.emprestimo-carro{
+border: 0px solid;
+border-radius: 8px;
+background-color: rgb(0, 131, 20);
+font-family: 'Goldman', cursive;
+width: 500px;
+height: 500px;
+margin-top: 20px;
+margin-left: 20px;
+text-align: center;
+color: white;
+
+
+}
+
+.emprestimo-carro img{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 50px;
+
+}
+.emprestimo-carro:hover{
+    border: 8px solid;
+    border-color: rgb(174, 180, 0);
+}
+
+.emprestimo-carro h2{
+margin-top: 20px;
+text-transform: uppercase;
+}
+
+.emprestimo-carro a {
+    color: white;
+    text-transform: uppercase;
+}

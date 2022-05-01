@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+
+.foto-logo{
+    width: 100px;
+}
+
+ul {
+    position: absolute;
+    right: 100px;
+
+}
+
+.navbar a{
+    margin:  0 0 0 40px;
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    color: rgb(0, 131, 20);
+    font-size: 20px;
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 300px;
+ 
+}
+
+.foto2-carousel{
+    object-position: 0 40%;
+    object-fit: cover;
+}
+

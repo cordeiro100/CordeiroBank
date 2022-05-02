@@ -1,0 +1,51 @@
+
+<div class="background">
+    <div>
+    <form #userForm="ngForm" [formGroup]="cadastroForm" (ngSubmit)="cadastrar()" class="formulario">
+       <a routerLink="/"><img src="assets/logo.png"></a>
+        
+       
+       <label for="nome">Digite seu primeiro nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: João" formControlName="nome" [(ngModel)]="userModel.nome">
+        <small *ngIf="cadastroForm.get('nome')?.errors?.['required']" class="text-danger d-block mt-2">
+            Um nome é necessário
+          </small>
+
+        <label for="sobrenome">Digite seu último nome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Pereira" formControlName="sobrenome" [(ngModel)]="userModel.sobrenome">
+        <small *ngIf="cadastroForm.get('sobrenome')?.errors?.['required']" class="text-danger d-block mt-2">
+            Seu último nome é necessário
+          </small>
+
+       <label for="email">Digite um email válido:</label>
+       <input type="email" id="email" name="email" placeholder="email@email.com" formControlName="email" [(ngModel)]="userModel.email">
+
+       <small *ngIf="cadastroForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+        Um email é necessário!!
+      </small>
+    
+        <label for="password">Crie uma senha:</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres" formControlName="password" [(ngModel)]="userModel.password">
+        <small *ngIf="cadastroForm.get('password')?.errors?.['required']" class="text-danger d-block mt-2">
+            Uma senha é necessária
+          </small>
+         
+          <label for="conta">Crie um número de conta:</label>
+          <input type="number" id="conta" name="conta" placeholder="4 dígitios" formControlName="conta" [(ngModel)]="userModel.conta">
+          <small *ngIf="cadastroForm.get('conta')?.errors?.['required']" class="text-danger d-block mt-2">
+            Número de conta é necessário
+            
+          </small>
+          
+        
+        <button  id="botao-login "type="submit" [disabled]="!cadastroForm.valid">Cadastrar</button>
+
+        
+        <div class="link-cadastro">
+            <p>Já possui cadastro??</p>
+            <a routerLink="/login">Cique aqui</a>
+          </div>
+    </form>
+    </div>
+    </div>
+    

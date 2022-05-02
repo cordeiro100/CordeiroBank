@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "cordeirobank-b49cf": {
+      "hosting": {
+        "CordeiroBank": [
+          "cordeirobank-b49cf"
+        ]
+      }
+    },
+    "cordeirobanco": {
+      "hosting": {
+        "CordeiroBank": [
+          "cordeirobanco"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cordeirobanco"
+  }
+}

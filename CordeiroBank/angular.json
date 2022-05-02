@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
@@ -103,6 +104,16 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "CordeiroBank:build:production",
+            "firebaseProject": "cordeirobanco",
+            "firebaseHostingSite": "cordeirobanco"
           }
         }
       }

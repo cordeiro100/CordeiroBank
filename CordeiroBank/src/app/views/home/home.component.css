@@ -128,7 +128,7 @@ text-transform: uppercase;
 }
 
 .transferencia img {
-    width: 350px;
+    width: 200px;
     margin-top: 20px;
     height: 300px;
 }
@@ -144,4 +144,20 @@ text-transform: uppercase;
 .transferencia:hover{
     border: 8px solid;
     border-color: rgb(174, 180, 0);
+}
+.dropdown-item {
+    background-color: rgb(255, 255, 255);
+    color: white;
+
+    width: 300px;
+    border: 1px solid;
+}
+
+.dropdown-item a {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.dropdown-menu{
+    width: 380px;
 }

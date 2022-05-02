@@ -30,12 +30,7 @@
             Uma senha é necessária
           </small>
          
-          <label for="conta">Crie um número de conta:</label>
-          <input type="number" id="conta" name="conta" placeholder="4 dígitios" formControlName="conta" [(ngModel)]="userModel.conta">
-          <small *ngIf="cadastroForm.get('conta')?.errors?.['required']" class="text-danger d-block mt-2">
-            Número de conta é necessário
-            
-          </small>
+        
           
         
         <button  id="botao-login "type="submit" [disabled]="!cadastroForm.valid">Cadastrar</button>
@@ -47,5 +42,6 @@
           </div>
     </form>
     </div>
+   
     </div>
     

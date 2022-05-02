@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+.logo{
+    width: 80px;
+}
+
+h1{
+    font-family: 'Goldman', cursive;
+}
+
+mat-icon{
+    position: absolute;
+    right: 100px;
+    font-size: 40px;
+}

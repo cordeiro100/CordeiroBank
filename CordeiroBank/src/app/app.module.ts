@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,8 +25,12 @@ import { ProfileComponent } from './views/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { ExtratoComponent } from './views/extrato/extrato.component';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
 
-
+registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [
@@ -37,6 +41,7 @@ import {MatIconModule} from '@angular/material/icon';
      LoginComponent,
      TransferenciaComponent,
      ProfileComponent,
+     ExtratoComponent,
 
   ],
   imports: [
@@ -46,6 +51,8 @@ import {MatIconModule} from '@angular/material/icon';
     ReactiveFormsModule,
     MatToolbarModule,
     MatIconModule,
+    AngularFirestoreModule,
+    
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -60,7 +67,9 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    {provide: LOCALE_ID, useValue: 'pt'},
+    {provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL'},
+    ScreenTrackingService,UserTrackingService 
   ],
   bootstrap: [AppComponent]
 })

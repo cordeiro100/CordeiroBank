@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 
 import { Auth, authState, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from '@angular/fire/auth';
-import { from, switchMap } from 'rxjs';
+import { from, Observable, switchMap } from 'rxjs';
+import { Transferencia } from '../transferencia';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,8 @@ user$ = authState(this.auth)
    return from(createUserWithEmailAndPassword(this.auth, email, password)).pipe(
      switchMap(({user}) => updateProfile(user, {displayName: nome}))
    )
-   
-   
- }
+  }
+
+
+
 }

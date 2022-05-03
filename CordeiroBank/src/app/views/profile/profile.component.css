@@ -6,6 +6,12 @@
 
 h1{
     font-family: 'Goldman', cursive;
+
+}
+
+.saldo {
+  margin-top: 20px;
+  color: white;
 }
 
 mat-icon{
@@ -13,3 +19,179 @@ mat-icon{
     right: 100px;
     font-size: 40px;
 }
+
+
+.global{
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    flex: 5;
+    background-color: rgb(0, 131, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 131, 20);
+    flex-direction: column;
+    border-radius: 8px;
+    border: 0px solid;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    font-family: 'Goldman', cursive;
+    animation: colors 9s ease infinite;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    flex: 3;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(224, 224, 224);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+section img {
+  width: 100px;
+  height: 100px;
+}
+
+.linha1 img{
+  margin: 0 0 0 15px;
+}
+.linha2 img {
+  margin: 0 0 0 15px;
+  margin-top: 10px;
+}
+.linha3 img{
+margin: 0 0 0 15px;
+margin-top: 10px;
+}
+.border img {
+  margin-top: 23px;
+  margin-left: 25px;
+}
+
+.border{
+  width: 400px;
+  border: 9px solid;
+  height: 600px;
+  border-color: black;
+  margin-top: -100px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 30px #00a410, 0px 0px 10px silver;
+}
+
+.tabela p {
+text-align: center;
+ 
+}
+
+.formulario img{
+    width: 150px;
+    margin-top: -100px;
+
+}
+
+form input {
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+form button {
+    margin-top: 20px;
+}
+@keyframes colors {
+    0% {
+      box-shadow: 0px 0px 30px #ffffff, 0px 0px 10px silver;
+    }
+    30% {
+      box-shadow: 0px 0px 30px #00ff26, 0px 0px 10px silver;
+    }
+    50% {
+      box-shadow: 0px 0px 30px #ff0000, 0px 0px 10px silver;
+    }
+    100% {
+      box-shadow: 0px 0px 30px #e1ff00, 0px 0px 10px silver;
+    }
+  }
+  
+  form button{
+      background-color: rgb(0, 131, 20);
+      color: white;
+  }
+
+
+
+.extrato {
+  background-color: white;
+  margin-left: 10px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4px;
+    margin-bottom: 16px;
+    font-family: 'Goldman', cursive;
+    
+  }
+  
+  .tabela {
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(0, 131, 20);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Goldman', cursive;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    color: white;
+
+  }
+    .tabela__cabecalho  {
+      color: var(--primary);
+      margin: 0 0 0 5px;
+    }
+
+
+    
+      .tabela__conteudo {
+        padding: 30px;
+        border-bottom: 2px solid green;
+        margin-right: 100px;
+      }
+
+  
+    .tabela__linha {
+      margin-bottom: 10px;
+      border-radius: 4px;
+  
+}
+.mensagem{
+  margin-left: 100px;
+}
+
+  
+    .tabela__conteudo {
+      padding: 10px;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+
+    main{
+      flex: 3;
+      height: 100vh;
+      background-color: #e1ff00;
+    }

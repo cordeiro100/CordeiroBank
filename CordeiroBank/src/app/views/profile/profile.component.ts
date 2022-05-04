@@ -19,7 +19,7 @@ export class ProfileComponent implements OnInit {
   data: Date;
   transferencias: any[];
   transferenciaForm: FormGroup
-  saldo = 2000.00
+  saldo = 3000.00
 
   user$ = this.authService.currentUser$;
 

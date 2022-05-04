@@ -26,12 +26,18 @@ mat-icon{
     height: 100vh;
 }
 
-aside {
-    flex: 5;
-    background-color: rgb(0, 131, 20);
+aside{
+  flex: 5;
+  background-color: rgb(0, 131, 20);
+  text-align: center;
+  
+}
+
+.aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     
 }
 
@@ -48,18 +54,27 @@ form{
     height: 500px;
     background-color: white;
     font-family: 'Goldman', cursive;
-    animation: colors 9s ease infinite;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px #0a6300, 0px 0px 10px silver;
+    margin-top: -200px;
+  
+    
 }
 
-section {
-    flex: 3;
+section{
+  flex: 3;
+  height: 100vh;
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+}
+
+.section {
+    
     display: flex;
     height: 100vh;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(249, 249, 249);
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+    border: 0px solid;
 }
 section img {
   width: 100px;
@@ -81,7 +96,41 @@ margin-top: 10px;
   margin-top: 23px;
   margin-left: 25px;
 }
+#foto{
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 130px;
 
+}
+
+
+.foto1:hover{
+  transform: scale(1.1);
+}
+.foto2:hover{
+  transform: scale(1.1);
+}
+.foto3:hover{
+  transform: scale(1.1);
+}
+.foto4:hover{
+  transform: scale(1.1);
+}
+.foto5:hover{
+  transform: scale(1.1);
+}
+.foto6:hover{
+  transform: scale(1.1);
+}
+.foto7:hover{
+  transform: scale(1.1);
+}
+.foto8:hover{
+  transform: scale(1.1);
+}
+.foto9:hover{
+  transform: scale(1.1);
+}
 .border{
   width: 400px;
   border: 9px solid;
@@ -159,6 +208,7 @@ form button {
     position: absolute;
     right: 0;
     color: white;
+    margin-right: 40px;
 
   }
     .tabela__cabecalho  {
@@ -193,5 +243,110 @@ form button {
     main{
       flex: 3;
       height: 100vh;
-      background-color: #e1ff00;
+      text-align: center;
+ }
+ .extrato{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+ }
+    
+    main h1{
+   
+      text-align: center;
     }
+@media screen and (max-width: 1780px) {
+  .tabela{
+    width: 400px;
+  }
+}
+    
+@media screen and (max-width: 1680px) {
+  .tabela{
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 1530px) {
+  .tabela{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .tabela{
+    width: 100px;
+  }
+
+  @media screen and (max-width: 1360px) {
+  .tabela {
+    width: 100px;
+  }
+  main h1{
+    font-size: 14px;
+  }
+
+  .saldo{
+    font-size: 14px;
+  }
+
+section h1{
+  font-size: 14px;
+}
+  
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1160px) {
+  .tabela{
+    width: 100px;
+  }
+ 
+}
+
+@media screen and (max-width: 1080px) {
+
+  .global{
+  flex-direction: column;
+}
+.tabela{
+  width: 900px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 790px) {
+  .tabela{
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabela{
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  form{
+    width: 360px;
+  }
+  .border{
+    width: 360px;
+  }
+  .border img{
+    width: 70px;
+    height: 70px;
+  }
+  .tabela{
+    width: 360px;
+  }
+}

@@ -1,162 +1,307 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 
-
-.foto-logo{
-    width: 100px;
+.foto-logo {
+  width: 100px;
 }
 
-ul {
-    position: absolute;
-    right: 100px;
 
-}
 
-.navbar a{
-    margin:  0 0 0 40px;
-    font-family: 'Goldman', cursive;
-    text-transform: uppercase;
-    color: rgb(0, 131, 20);
-    font-size: 20px;
+.navbar a {
+  margin: 0 0 0 40px;
+  font-family: "Goldman", cursive;
+  text-transform: uppercase;
+  color: rgb(0, 131, 20);
+  font-size: 20px;
 }
 
 .carousel img {
-    object-fit: cover;
-    height: 300px;
- 
+  object-fit: cover;
+  height: 300px;
 }
 
-.foto2-carousel{
-    object-position: 0 40%;
-    object-fit: cover;
+.foto2-carousel {
+  object-position: 0 40%;
+  object-fit: cover;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: "Goldman", cursive;
 }
 
-.emprestimos{
-    border: 0px solid;
-    width: 500px;
-    height: 500px;
-    margin-top: 20px;
-    background-color: rgb(0, 131, 20);
-    border-radius: 8px;
-    font-family: 'Goldman', cursive;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-align: center;
-
+.emprestimos {
+  border: 0px solid;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  background-color: rgb(0, 131, 20);
+  border-radius: 8px;
+  font-family: "Goldman", cursive;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.emprestimos:hover{
-
-    border: 8px solid;
-    border-color: rgb(174, 180, 0);
+.emprestimos:hover {
+  border: 8px solid;
+  border-color: rgb(174, 180, 0);
 }
 
 .emprestimos img {
-    border-radius: 50%;
-    margin-top: 20px;
-    width: 400px;
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 400px;
 }
 
 .emprestimos a {
-    color: white;
-    text-decoration: underline;
-   
+  color: white;
+  text-decoration: underline;
 }
 
-.emprestimos h2{
-    margin-top: 14px;
+.emprestimos h2 {
+  margin-top: 14px;
 }
 
-.emprestimo-carro{
-border: 0px solid;
-border-radius: 8px;
-background-color: rgb(0, 131, 20);
+.emprestimo-carro {
+  border: 0px solid;
+  border-radius: 8px;
+  background-color: rgb(0, 131, 20);
 
-width: 500px;
-height: 500px;
-margin-top: 20px;
-margin-left: 20px;
-text-align: center;
-color: white;
-
-
-
-
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  color: white;
 }
 
-.emprestimo-carro img{
-
-    width: 400px;
-    margin-top: 20px;
-    border-radius: 50%;
+.emprestimo-carro img {
+  width: 400px;
+  margin-top: 20px;
+  border-radius: 50%;
 }
-.emprestimo-carro:hover{
-    border: 8px solid;
-    border-color: rgb(174, 180, 0);
+.emprestimo-carro:hover {
+  border: 8px solid;
+  border-color: rgb(174, 180, 0);
 }
 
-.emprestimo-carro h2{
-margin-top: 20px;
-text-transform: uppercase;
+.emprestimo-carro h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .emprestimo-carro a {
-    color: white;
-    text-transform: uppercase;
+  color: white;
+  text-transform: uppercase;
 }
 
 .transferencia {
-    border: 0px solid;
-    width: 500px;
-    height: 500px;
-    margin-top: 20px;
-    background-color: rgb(0, 131, 20);
-    border-radius: 8px;
-    font-family: 'Goldman', cursive;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    margin-left: 20px;
+  border: 0px solid;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  background-color: rgb(0, 131, 20);
+  border-radius: 8px;
+  font-family: "Goldman", cursive;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 20px;
 }
 
 .transferencia img {
-    width: 400px;
-    margin-top: 20px;
+  width: 400px;
+  margin-top: 20px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .transferencia h2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .transferencia a {
-    color: white;
+  color: white;
 }
 
-.transferencia:hover{
-    border: 8px solid;
-    border-color: rgb(174, 180, 0);
+.transferencia:hover {
+  border: 8px solid;
+  border-color: rgb(174, 180, 0);
 }
 .dropdown-item {
-    background-color: rgb(255, 255, 255);
-    color: white;
+  background-color: rgb(255, 255, 255);
+  color: white;
 
-    width: 300px;
-    border: 1px solid;
+  width: 300px;
+  border: 1px solid;
 }
 
 .dropdown-item a {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
 }
 
-.dropdown-menu{
-    width: 380px;
+.dropdown-menu {
+  width: 380px;
+}
+
+@media screen and (max-width: 1680px) {
+    .emprestimos{
+        width: 400px;
+    }
+    .emprestimos img{
+        width: 300px;
+    }
+    .emprestimo-carro{
+        width: 400px;
+    }
+    .emprestimo-carro img{
+        width: 300px;
+    }
+    .transferencia{
+        width: 400px;
+    }
+    .transferencia img{
+        width: 300px;
+    }
+        
+    
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1280px) {
+    .emprestimos{
+        width: 300px;
+    }
+    .emprestimos img{
+        width: 250px;
+    }
+    .emprestimo-carro{
+        width: 300px;
+    }
+    .emprestimo-carro img{
+        width: 250px;
+    }
+    .transferencia{
+        width: 300px;
+    }
+    .transferencia img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 990px) {
+  
+    .emprestimos{
+        width: 250px;
+    }
+    .emprestimos img{
+        width: 200px;
+    }
+    .emprestimo-carro{
+        width: 250px;
+    }
+    .emprestimo-carro img{
+        width: 200px;
+    }
+    .transferencia{
+        width: 250px;
+    }
+    .transferencia img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .emprestimos{
+        width: 230px;
+    }
+    .emprestimos img{
+        width: 220px;
+    }
+    .emprestimo-carro{
+        width: 230px;
+    }
+    .emprestimo-carro img{
+        width: 220px;
+    }
+    .transferencia{
+        width: 230px;
+    }
+    .transferencia img{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 720px) {
+    main{
+        flex-direction: column;
+    }
+    .emprestimos{
+        width: 380px;
+    }
+    .emprestimos img{
+        width: 350px;
+    }
+    .emprestimo-carro{
+        width: 380px;
+    }
+    .emprestimo-carro img{
+        width: 350px;
+    }
+    .transferencia{
+        width: 380px;
+    }
+    .transferencia img{
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .emprestimos{
+        width: 300px;
+    }
+    .emprestimos img{
+        width: 250px;
+    }
+    .emprestimo-carro{
+        width: 300px;
+    }
+    .emprestimo-carro img{
+        width: 250px;
+    }
+    .transferencia{
+        width: 300px;
+    }
+    .transferencia img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .emprestimos{
+        width: 250px;
+    }
+    .emprestimos img{
+        width: 240px;
+    }
+    .emprestimo-carro{
+        width: 250px;
+    }
+    .emprestimo-carro img{
+        width: 240px;
+    }
+    .transferencia{
+        width: 250px;
+    }
+    .transferencia img{
+        width: 240px;
+    }
 }

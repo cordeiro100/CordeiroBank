@@ -19,10 +19,10 @@
 <div class="global">
 
 <aside>
+  <h1 class="saldo"> O seu saldo atual é de R${{saldo}}</h1>
+  <div class="aside">
 
-  <div class="background">
-
-    <h1 class="saldo"> O seu saldo atual é de R${{saldo}}</h1>
+  
 
     <div class="formulario">
         <form  #transfereForm="ngForm"  (ngSubmit)="transferir(transfereForm)" >
@@ -41,25 +41,37 @@
     </div>
 </aside>
 
+
 <section>
  
+  <h1 class="serviço-titulo">Serviços</h1>
+ 
+  <div class="section">
+
+
 <div class="border">
 <div class="linha1">
-  <img src="assets/Samsung no CBank.png">
-  <img src="assets/CbankPlus.png">
-  <img src="assets/CriptoBank.png">
+ <a href=""><img class="foto1" src="assets/Samsung no CBank.png"></a>
+ <a href=""> <img class="foto2" src="assets/CbankPlus.png"></a>
+ <a href=""> <img class="foto3" src="assets/CriptoBank.png"></a>
 </div>
 <div class="linha2">
-  <img src="assets/DinheiroSeguro.png">
-  <img src="assets/Economize.png">
-  <img src="assets/Investimentos.png">
+ <a href=""><img class="foto4" src="assets/DinheiroSeguro.png"></a> 
+ <a href=""> <img class="foto5" src="assets/Economize.png"></a>
+ <a href=""> <img class="foto6" src="assets/Investimentos.png"></a>
 </div>
 <div class="linha3">
-  <img src="assets/Sem sair de casa.png">
-  <img src="assets/Seu cartão Cbank.png">
-  <img src="assets/Viagem.png">
+ <a href=""><img class="foto7" src="assets/Sem sair de casa.png"></a> 
+ <a href=""> <img class="foto8" src="assets/Seu cartão Cbank.png"></a>
+ <a href=""> <img class="foto9" src="assets/Viagem.png"></a>
+</div>
+<div>
+  <img id="foto" src="assets/cbank.png">
 </div>
 </div>
+
+</div>
+
 
 
 
@@ -67,8 +79,9 @@
 
 
 
-<main class="extrato">
+<main>
   <h1>Suas transferências</h1>
+  <div class="extrato">
   <table class="tabela">
   
     <thead class="tabela__cabecalho">
@@ -76,7 +89,7 @@
       <th class="tabela__cabecalho__conteudo">Valor</th>
       <th class="tabela__cabecalho__conteudo">Destino</th>
     </thead>
-    <tbody *ngIf="transferencias.length > 0; else listaVazia">
+    <tbody>
       <tr *ngFor="let transferencia of transferencias" class="tabela__linha">
       
         <td class="tabela__conteudo">{{transferencia.valor | currency}}</td>
@@ -87,6 +100,9 @@
   <ng-template #listaVazia>
       <p class="mensagem">Sem transferências</p>
   </ng-template>
+  
+</div>
+
 </main>
 
 

@@ -12,10 +12,17 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class ExtratoComponent implements OnInit {
 
+  transferencias: any[]
 
-  constructor() { }
+  constructor(private transferenciasService: TransferenciasService) { }
 
   ngOnInit(): void {
+    this.transferenciasService
+      .getTransferencia()
+      .subscribe((transferencias: Transferencia[]) => {
+        console.table(transferencias);
+        this.transferencias = transferencias;
+      });
+  }
 
   }
-}

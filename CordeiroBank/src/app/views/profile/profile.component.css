@@ -23,7 +23,7 @@ mat-icon{
 
 .global{
     display: flex;
-    height: 100vh;
+ 
 }
 
 aside{
@@ -81,8 +81,33 @@ section img {
   height: 100px;
 }
 
+.linha-titulo{
+  display: flex;
+ 
+  font-size: 20px;
+  margin-top: 10px;
+color: rgb(0, 131, 20);
+font-family: 'Goldman', cursive;
+ 
+}
+
+.titulo1{
+  margin: 0 0 0 35px;
+}
+
+.titulo2{
+  margin: 0 0 0 35px;
+  display: none;
+}
+
+.titulo3{
+  margin: 0 0 0 35px;
+  display: none;
+}
+
 .linha1 img{
   margin: 0 0 0 15px;
+  
 }
 .linha2 img {
   margin: 0 0 0 15px;
@@ -102,7 +127,30 @@ margin-top: 10px;
   margin-left: 130px;
 
 }
-
+.foto2{
+  opacity: 0.5;
+}
+.foto3{
+  opacity: 0.5;
+}
+.foto4{
+  opacity: 0.5;
+}
+.foto5{
+  opacity: 0.5;
+}
+.foto6{
+  opacity: 0.5;
+}
+.foto7{
+  opacity: 0.5;
+}
+.foto8{
+  opacity: 0.5;
+}
+.foto9{
+  opacity: 0.5;
+}
 
 .foto1:hover{
   transform: scale(1.1);
@@ -140,6 +188,7 @@ margin-top: 10px;
   margin-left: 20px;
   box-shadow: 0px 0px 30px #00a410, 0px 0px 10px silver;
 }
+
 
 .tabela p {
 text-align: center;
@@ -242,7 +291,7 @@ form button {
 
     main{
       flex: 3;
-      height: 100vh;
+  
       text-align: center;
  }
  .extrato{
@@ -321,11 +370,22 @@ section h1{
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 990px) {
+  .tabela{
+    width: 360px;
+  }
+  .tabela{
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 790px) {
   .tabela{
     width: 360px;
+  }
+  .tabela{
+    width: 768px;
+    margin: auto;
   }
 }
 
@@ -333,11 +393,27 @@ section h1{
   .tabela{
     width: 360px;
   }
+  .tabela{
+    width: 100%;
+    margin: auto;
+  }
+  .border{
+    margin: auto;
+  }
+  
 }
 
 @media screen and (max-width: 380px) {
+  
+  .global{
+    width: 100%;
+    margin: auto;
+  }
+  
+  
   form{
     width: 360px;
+    margin: auto;
   }
   .border{
     width: 360px;
@@ -346,7 +422,17 @@ section h1{
     width: 70px;
     height: 70px;
   }
+ 
+  .border{
+    width: 100%;
+
+  
+   margin: auto;
+  }
   .tabela{
-    width: 360px;
+    width: 100%;
+    margin: auto;
+   
+  
   }
 }

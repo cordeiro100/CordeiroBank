@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 
-.logo{
-    width: 80px;
+.logo {
+  width: 80px;
 }
 
-h1{
-    font-family: 'Goldman', cursive;
-
+h1 {
+  font-family: "Goldman", cursive;
 }
 
 .saldo {
@@ -14,53 +13,47 @@ h1{
   color: white;
 }
 
-mat-icon{
-    position: absolute;
-    right: 100px;
-    font-size: 40px;
+mat-icon {
+  position: absolute;
+  right: 100px;
+  font-size: 40px;
 }
 
-
-.global{
-    display: flex;
- 
+.global {
+  display: flex;
 }
 
-aside{
+aside {
   flex: 5;
   background-color: rgb(0, 131, 20);
   text-align: center;
-  
 }
 
 .aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(0, 131, 20);
-    flex-direction: column;
-    border-radius: 8px;
-    border: 0px solid;
-    width: 400px;
-    height: 500px;
-    background-color: white;
-    font-family: 'Goldman', cursive;
-    box-shadow: 0px 0px 30px #0a6300, 0px 0px 10px silver;
-    margin-top: -200px;
-  
-    
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 131, 20);
+  flex-direction: column;
+  border-radius: 8px;
+  border: 0px solid;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  font-family: "Goldman", cursive;
+  box-shadow: 0px 0px 30px #0a6300, 0px 0px 10px silver;
+  margin-top: -200px;
 }
 
-section{
+section {
   flex: 3;
   height: 100vh;
   background-color: rgb(249, 249, 249);
@@ -68,118 +61,114 @@ section{
 }
 
 .section {
-    
-    display: flex;
-    height: 100vh;
-    background-color: rgb(249, 249, 249);
-    justify-content: center;
-    align-items: center;
-    border: 0px solid;
+  display: flex;
+  height: 100vh;
+  background-color: rgb(249, 249, 249);
+  justify-content: center;
+  align-items: center;
+  border: 0px solid;
 }
 section img {
   width: 100px;
   height: 100px;
 }
 
-.linha-titulo{
+.linha-titulo {
   display: flex;
- 
+
   font-size: 20px;
   margin-top: 10px;
-color: rgb(0, 131, 20);
-font-family: 'Goldman', cursive;
- 
+  color: rgb(0, 131, 20);
+  font-family: "Goldman", cursive;
 }
 
-.titulo1{
+.titulo1 {
   margin: 0 0 0 35px;
 }
 
-.titulo2{
-  margin: 0 0 0 35px;
-  display: none;
-}
-
-.titulo3{
+.titulo2 {
   margin: 0 0 0 35px;
   display: none;
 }
 
-.linha1 img{
+.titulo3 {
+  margin: 0 0 0 35px;
+  display: none;
+}
+
+.linha1 img {
   margin: 0 0 0 15px;
-  
 }
 .linha2 img {
   margin: 0 0 0 15px;
   margin-top: 10px;
 }
-.linha3 img{
-margin: 0 0 0 15px;
-margin-top: 10px;
+.linha3 img {
+  margin: 0 0 0 15px;
+  margin-top: 10px;
 }
 .border img {
   margin-top: 23px;
   margin-left: 25px;
 }
-#foto{
+#foto {
   width: 300px;
   margin-top: 100px;
   margin-left: 130px;
+}
+.foto2 {
+  opacity: 0.5;
+}
+.foto3 {
+  opacity: 0.5;
+}
+.foto4 {
+  opacity: 0.5;
+}
+.foto5 {
+  opacity: 0.5;
+}
+.foto6 {
+  opacity: 0.5;
+}
+.foto7 {
+  opacity: 0.5;
+}
+.foto8 {
+  opacity: 0.5;
+}
+.foto9 {
+  opacity: 0.5;
+}
 
-}
-.foto2{
-  opacity: 0.5;
-}
-.foto3{
-  opacity: 0.5;
-}
-.foto4{
-  opacity: 0.5;
-}
-.foto5{
-  opacity: 0.5;
-}
-.foto6{
-  opacity: 0.5;
-}
-.foto7{
-  opacity: 0.5;
-}
-.foto8{
-  opacity: 0.5;
-}
-.foto9{
-  opacity: 0.5;
-}
-
-.foto1:hover{
+.foto1:hover {
   transform: scale(1.1);
 }
-.foto2:hover{
+.foto2:hover {
   transform: scale(1.1);
 }
-.foto3:hover{
+.foto3:hover {
   transform: scale(1.1);
 }
-.foto4:hover{
+.foto4:hover {
   transform: scale(1.1);
 }
-.foto5:hover{
+.foto5:hover {
   transform: scale(1.1);
 }
-.foto6:hover{
+.foto6:hover {
   transform: scale(1.1);
 }
-.foto7:hover{
+.foto7:hover {
   transform: scale(1.1);
 }
-.foto8:hover{
+.foto8:hover {
   transform: scale(1.1);
 }
-.foto9:hover{
+.foto9:hover {
   transform: scale(1.1);
 }
-.border{
+.border {
   width: 400px;
   border: 9px solid;
   height: 600px;
@@ -189,50 +178,45 @@ margin-top: 10px;
   box-shadow: 0px 0px 30px #00a410, 0px 0px 10px silver;
 }
 
-
 .tabela p {
-text-align: center;
- 
+  text-align: center;
 }
 
-.formulario img{
-    width: 150px;
-    margin-top: -100px;
-
+.formulario img {
+  width: 150px;
+  margin-top: -100px;
 }
 
 form input {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 form label {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 form button {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 @keyframes colors {
-    0% {
-      box-shadow: 0px 0px 30px #ffffff, 0px 0px 10px silver;
-    }
-    30% {
-      box-shadow: 0px 0px 30px #00ff26, 0px 0px 10px silver;
-    }
-    50% {
-      box-shadow: 0px 0px 30px #ff0000, 0px 0px 10px silver;
-    }
-    100% {
-      box-shadow: 0px 0px 30px #e1ff00, 0px 0px 10px silver;
-    }
+  0% {
+    box-shadow: 0px 0px 30px #ffffff, 0px 0px 10px silver;
   }
-  
-  form button{
-      background-color: rgb(0, 131, 20);
-      color: white;
+  30% {
+    box-shadow: 0px 0px 30px #00ff26, 0px 0px 10px silver;
   }
+  50% {
+    box-shadow: 0px 0px 30px #ff0000, 0px 0px 10px silver;
+  }
+  100% {
+    box-shadow: 0px 0px 30px #e1ff00, 0px 0px 10px silver;
+  }
+}
 
-
+form button {
+  background-color: rgb(0, 131, 20);
+  color: white;
+}
 
 .extrato {
   background-color: white;
@@ -240,199 +224,180 @@ form button {
 }
 
 .titulo {
-    text-align: center;
-    font-size: 4px;
-    margin-bottom: 16px;
-    font-family: 'Goldman', cursive;
-    
-  }
-  
-  .tabela {
-    text-align: center;
-    margin: 0 auto;
-    background-color: rgb(0, 131, 20);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Goldman', cursive;
-    width: 450px;
-    position: absolute;
-    right: 0;
-    color: white;
-    margin-right: 40px;
-
-  }
-    .tabela__cabecalho  {
-      color: var(--primary);
-      margin: 0 0 0 5px;
-    }
-
-
-    
-      .tabela__conteudo {
-        padding: 30px;
-        border-bottom: 2px solid green;
-        margin-right: 100px;
-      }
-
-  
-    .tabela__linha {
-      margin-bottom: 10px;
-      border-radius: 4px;
-  
+  text-align: center;
+  font-size: 4px;
+  margin-bottom: 16px;
+  font-family: "Goldman", cursive;
 }
-.mensagem{
+
+.tabela {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(0, 131, 20);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Goldman", cursive;
+  width: 450px;
+  position: absolute;
+  right: 0;
+  color: white;
+  margin-right: 40px;
+}
+.tabela__cabecalho {
+  color: var(--primary);
+  margin: 0 0 0 5px;
+}
+
+.tabela__conteudo {
+  padding: 30px;
+  border-bottom: 2px solid green;
+  margin-right: 100px;
+}
+
+.tabela__linha {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.mensagem {
   margin-left: 100px;
 }
 
-  
-    .tabela__conteudo {
-      padding: 10px;
-      border-bottom: 1px solid var(--cinza-claro);
-    }
+.tabela__conteudo {
+  padding: 10px;
+  border-bottom: 1px solid var(--cinza-claro);
+}
 
-    main{
-      flex: 3;
-  
-      text-align: center;
- }
- .extrato{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 100px;
- }
-    
-    main h1{
-   
-      text-align: center;
-    }
+main {
+  flex: 3;
+
+  text-align: center;
+}
+.extrato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+main h1 {
+  text-align: center;
+}
 @media screen and (max-width: 1780px) {
-  .tabela{
+  .tabela {
     width: 400px;
   }
 }
-    
+
 @media screen and (max-width: 1680px) {
-  .tabela{
+  .tabela {
     width: 380px;
   }
-
 }
 
 @media screen and (max-width: 1530px) {
-  .tabela{
+  .tabela {
     width: 300px;
   }
 }
 @media screen and (max-width: 1440px) {
-  .tabela{
+  .tabela {
     width: 100px;
   }
 
   @media screen and (max-width: 1360px) {
-  .tabela {
-    width: 100px;
-  }
-  main h1{
-    font-size: 14px;
-  }
+    .tabela {
+      width: 100px;
+    }
+    main h1 {
+      font-size: 14px;
+    }
 
-  .saldo{
-    font-size: 14px;
-  }
+    .saldo {
+      font-size: 14px;
+    }
 
-section h1{
-  font-size: 14px;
-}
-  
+    section h1 {
+      font-size: 14px;
+    }
   }
 }
 
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 1160px) {
-  .tabela{
+  .tabela {
     width: 100px;
   }
- 
 }
 
 @media screen and (max-width: 1080px) {
-
-  .global{
-  flex-direction: column;
-}
-.tabela{
-  width: 900px;
-}
-
+  .global {
+    flex-direction: column;
+  }
+  .tabela {
+    width: 900px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 990px) {
-  .tabela{
+  .tabela {
     width: 360px;
   }
-  .tabela{
+  .tabela {
     width: 100%;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 790px) {
-  .tabela{
+  .tabela {
     width: 360px;
   }
-  .tabela{
+  .tabela {
     width: 768px;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .tabela{
+  .tabela {
     width: 360px;
   }
-  .tabela{
+  .tabela {
     width: 100%;
     margin: auto;
   }
-  .border{
+  .border {
     margin: auto;
   }
-  
 }
 
 @media screen and (max-width: 380px) {
-  
-  .global{
+  .global {
     width: 100%;
     margin: auto;
   }
-  
-  
-  form{
+
+  form {
     width: 360px;
     margin: auto;
   }
-  .border{
+  .border {
     width: 360px;
   }
-  .border img{
+  .border img {
     width: 70px;
     height: 70px;
   }
- 
-  .border{
+
+  .border {
     width: 100%;
 
-  
-   margin: auto;
+    margin: auto;
   }
-  .tabela{
+  .tabela {
     width: 100%;
     margin: auto;
-   
-  
   }
 }

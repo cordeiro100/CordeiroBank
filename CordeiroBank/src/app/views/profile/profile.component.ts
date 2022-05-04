@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
   destino: number;
   data: Date;
   transferencias: any[];
-  transferenciaForm: FormGroup
+  transferenciaForm: FormGroup;
   saldo = 5350;
 
   user$ = this.authService.currentUser$;
@@ -31,12 +31,13 @@ export class ProfileComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-this.transferenciaForm = this.formBuilder.group({
-  valor: ["", [Validators.required]],
-  destino: ["",[Validators.required, Validators.minLength(4), Validators.minLength(4)]]
-})
-
-
+    this.transferenciaForm = this.formBuilder.group({
+      valor: ['', [Validators.required]],
+      destino: [
+        '',
+        [Validators.required, Validators.minLength(4), Validators.minLength(4)],
+      ],
+    });
 
     this.transferenciasService
       .getTransferencia()
@@ -51,11 +52,6 @@ this.transferenciaForm = this.formBuilder.group({
       .addTransferencia(form.value)
       .then(() => form.reset());
 
-      this.saldo = this.saldo - this.valor
-
-     
-    
-
-     
+    this.saldo = this.saldo - this.valor;
   }
 }

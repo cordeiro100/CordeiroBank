@@ -4,8 +4,6 @@
   width: 100px;
 }
 
-
-
 .navbar a {
   margin: 0 0 0 40px;
   font-family: "Goldman", cursive;
@@ -149,159 +147,155 @@ main {
 }
 
 @media screen and (max-width: 1680px) {
-    .emprestimos{
-        width: 400px;
-    }
-    .emprestimos img{
-        width: 300px;
-    }
-    .emprestimo-carro{
-        width: 400px;
-    }
-    .emprestimo-carro img{
-        width: 300px;
-    }
-    .transferencia{
-        width: 400px;
-    }
-    .transferencia img{
-        width: 300px;
-    }
-        
-    
+  .emprestimos {
+    width: 400px;
+  }
+  .emprestimos img {
+    width: 300px;
+  }
+  .emprestimo-carro {
+    width: 400px;
+  }
+  .emprestimo-carro img {
+    width: 300px;
+  }
+  .transferencia {
+    width: 400px;
+  }
+  .transferencia img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
 }
 
 @media screen and (max-width: 1280px) {
-    .emprestimos{
-        width: 300px;
-    }
-    .emprestimos img{
-        width: 250px;
-    }
-    .emprestimo-carro{
-        width: 300px;
-    }
-    .emprestimo-carro img{
-        width: 250px;
-    }
-    .transferencia{
-        width: 300px;
-    }
-    .transferencia img{
-        width: 250px;
-    }
+  .emprestimos {
+    width: 300px;
+  }
+  .emprestimos img {
+    width: 250px;
+  }
+  .emprestimo-carro {
+    width: 300px;
+  }
+  .emprestimo-carro img {
+    width: 250px;
+  }
+  .transferencia {
+    width: 300px;
+  }
+  .transferencia img {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 990px) {
-  
-    .emprestimos{
-        width: 250px;
-    }
-    .emprestimos img{
-        width: 200px;
-    }
-    .emprestimo-carro{
-        width: 250px;
-    }
-    .emprestimo-carro img{
-        width: 200px;
-    }
-    .transferencia{
-        width: 250px;
-    }
-    .transferencia img{
-        width: 200px;
-    }
+  .emprestimos {
+    width: 250px;
+  }
+  .emprestimos img {
+    width: 200px;
+  }
+  .emprestimo-carro {
+    width: 250px;
+  }
+  .emprestimo-carro img {
+    width: 200px;
+  }
+  .transferencia {
+    width: 250px;
+  }
+  .transferencia img {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 790px) {
-    .emprestimos{
-        width: 230px;
-    }
-    .emprestimos img{
-        width: 220px;
-    }
-    .emprestimo-carro{
-        width: 230px;
-    }
-    .emprestimo-carro img{
-        width: 220px;
-    }
-    .transferencia{
-        width: 230px;
-    }
-    .transferencia img{
-        width: 220px;
-    }
+  .emprestimos {
+    width: 230px;
+  }
+  .emprestimos img {
+    width: 220px;
+  }
+  .emprestimo-carro {
+    width: 230px;
+  }
+  .emprestimo-carro img {
+    width: 220px;
+  }
+  .transferencia {
+    width: 230px;
+  }
+  .transferencia img {
+    width: 220px;
+  }
 }
 @media screen and (max-width: 720px) {
-    main{
-        flex-direction: column;
-    }
-    .emprestimos{
-        width: 380px;
-    }
-    .emprestimos img{
-        width: 350px;
-    }
-    .emprestimo-carro{
-        width: 380px;
-    }
-    .emprestimo-carro img{
-        width: 350px;
-    }
-    .transferencia{
-        width: 380px;
-    }
-    .transferencia img{
-        width: 350px;
-    }
+  main {
+    flex-direction: column;
+  }
+  .emprestimos {
+    width: 380px;
+  }
+  .emprestimos img {
+    width: 350px;
+  }
+  .emprestimo-carro {
+    width: 380px;
+  }
+  .emprestimo-carro img {
+    width: 350px;
+  }
+  .transferencia {
+    width: 380px;
+  }
+  .transferencia img {
+    width: 350px;
+  }
 }
 
-
 @media screen and (max-width: 500px) {
-    .emprestimos{
-        width: 300px;
-    }
-    .emprestimos img{
-        width: 250px;
-    }
-    .emprestimo-carro{
-        width: 300px;
-    }
-    .emprestimo-carro img{
-        width: 250px;
-    }
-    .transferencia{
-        width: 300px;
-    }
-    .transferencia img{
-        width: 250px;
-    }
+  .emprestimos {
+    width: 300px;
+  }
+  .emprestimos img {
+    width: 250px;
+  }
+  .emprestimo-carro {
+    width: 300px;
+  }
+  .emprestimo-carro img {
+    width: 250px;
+  }
+  .transferencia {
+    width: 300px;
+  }
+  .transferencia img {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 380px) {
-    .emprestimos{
-        width: 250px;
-    }
-    .emprestimos img{
-        width: 240px;
-    }
-    .emprestimo-carro{
-        width: 250px;
-    }
-    .emprestimo-carro img{
-        width: 240px;
-    }
-    .transferencia{
-        width: 250px;
-    }
-    .transferencia img{
-        width: 240px;
-    }
+  .emprestimos {
+    width: 250px;
+  }
+  .emprestimos img {
+    width: 240px;
+  }
+  .emprestimo-carro {
+    width: 250px;
+  }
+  .emprestimo-carro img {
+    width: 240px;
+  }
+  .transferencia {
+    width: 250px;
+  }
+  .transferencia img {
+    width: 240px;
+  }
 }

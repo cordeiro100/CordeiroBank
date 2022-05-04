@@ -5,7 +5,6 @@ import { HotToastService } from '@ngneat/hot-toast';
 import { User } from 'src/app/models/user';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -19,8 +18,6 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private toast: HotToastService
-
-
   ) {}
 
   ngOnInit(): void {
@@ -35,23 +32,21 @@ export class LoginComponent implements OnInit {
   userModel = new User('', '', '', '');
 
   logar() {
-
-    if(!this.loginForm.valid){
-      return
+    if (!this.loginForm.valid) {
+      return;
     }
-    const {email, password} = this.loginForm.value
-    this.authService.login(email, password).pipe(
-      this.toast.observe({
-        success:'Logado com sucesso',
-        loading:'Logando...',
-        error: 'Email ou senha errado'
-
-      })
-    ).subscribe(()=>{
-      this.router.navigateByUrl('/profile')
-    })
-
+    const { email, password } = this.loginForm.value;
+    this.authService
+      .login(email, password)
+      .pipe(
+        this.toast.observe({
+          success: 'Logado com sucesso',
+          loading: 'Logando...',
+          error: 'Email ou senha errado',
+        })
+      )
+      .subscribe(() => {
+        this.router.navigateByUrl('/profile');
+      });
   }
-  
-
 }

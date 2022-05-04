@@ -132,11 +132,11 @@
   }
 
   @media screen and (max-width: 290px) {
-  .formulario{
-    width: 270px;
-  }
-  .formulario input{
-    width: 250px;
-  }
+    .formulario {
+      width: 270px;
+    }
+    .formulario input {
+      width: 250px;
+    }
   }
 }

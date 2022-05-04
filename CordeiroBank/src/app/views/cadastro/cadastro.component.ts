@@ -8,48 +8,45 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.css']
+  styleUrls: ['./cadastro.component.css'],
 })
 export class CadastroComponent implements OnInit {
+  cadastroForm: FormGroup;
 
-cadastroForm: FormGroup
-
-
-
-  constructor(private formBuilder: FormBuilder, private authService: AuthenticationService, private router: Router, private toast: HotToastService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthenticationService,
+    private router: Router,
+    private toast: HotToastService
+  ) {}
 
   ngOnInit(): void {
     this.cadastroForm = this.formBuilder.group({
-      nome: ["", [Validators.required]],
-      sobrenome: ["", [Validators.required]],
-      email: ["", [Validators.required, Validators.email]],
-      password: ["", [Validators.required, Validators.minLength(6)]]
-      
-     
-      })
+      nome: ['', [Validators.required]],
+      sobrenome: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+    });
   }
 
+  userModel = new User('', '', '', '');
 
-userModel = new User("","","","")
-
-
-cadastrar(){
-  console.log(this.userModel)
-  console.log(this.userModel)
-  if(!this.cadastroForm.valid) return
-  const {nome, sobrenome, email, password} =this.cadastroForm.value
-  this.authService.registro(nome, email, password).pipe(
-    this.toast.observe({
-      success: 'Cadastro criado com sucesso!',
-      loading: 'Carregando cadastro...',
-      error: (message) => `${message}`
-    })
-  ).subscribe(()=>{
-    this.router.navigateByUrl('/login')
-  })
+  cadastrar() {
+    console.log(this.userModel);
+    console.log(this.userModel);
+    if (!this.cadastroForm.valid) return;
+    const { nome, sobrenome, email, password } = this.cadastroForm.value;
+    this.authService
+      .registro(nome, email, password)
+      .pipe(
+        this.toast.observe({
+          success: 'Cadastro criado com sucesso!',
+          loading: 'Carregando cadastro...',
+          error: (message) => `${message}`,
+        })
+      )
+      .subscribe(() => {
+        this.router.navigateByUrl('/login');
+      });
+  }
 }
-}
-
-
-
-

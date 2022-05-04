@@ -1,34 +1,52 @@
 <div class="background">
-    <div>
-    <form #userForm="ngForm" [formGroup]="loginForm" (ngSubmit)="logar()" class="formulario">
-       <a routerLink="/"><img src="assets/logo.png"></a>
-        
-     
-     
-       <label for="email">Digite seu email:</label>
-       <input type="email" id="email" name="email" placeholder="email@email.com" formControlName="email" [(ngModel)]="userModel.email">
-        <small *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+  <div>
+    <form
+      #userForm="ngForm"
+      [formGroup]="loginForm"
+      (ngSubmit)="logar()"
+      class="formulario"
+    >
+      <a routerLink="/"><img src="assets/logo.png" alt="Foto ilustrativa logo da CordeiroBank" /></a>
+
+      <label for="email">Digite seu email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email@email.com"
+        formControlName="email"
+        [(ngModel)]="userModel.email"
+      />
+      <small
+        *ngIf="loginForm.get('email')?.errors?.['required']"
+        class="text-danger d-block mt-2"
+      >
         Um email é necessário!!
       </small>
 
+      <label for="password">Digite sua senha:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Digite sua senha"
+        formControlName="password"
+        [(ngModel)]="userModel.password"
+      />
+      <small
+        *ngIf="loginForm.get('password')?.errors?.['required']"
+        class="text-danger d-block mt-2"
+      >
+        Uma senha é necessária
+      </small>
 
-  
-    
-        <label for="password">Digite sua senha:</label>
-        <input type="password" id="password" name="password" placeholder="Digite sua senha" formControlName="password" [(ngModel)]="userModel.password">
-         <small *ngIf="loginForm.get('password')?.errors?.['required']" class="text-danger d-block mt-2">
-          Uma senha é necessária
-        </small>
-        
-        <button  id="botao-login" type="submit" [disabled]="!loginForm.valid">Logar</button>
-        <div class="link-cadastro">
-      
-          <p>Novo por aqui?</p>
-            <a routerLink="/cadastro">Crie a sua conta</a>
-        
-          </div>
+      <button id="botao-login" type="submit" [disabled]="!loginForm.valid">
+        Logar
+      </button>
+      <div class="link-cadastro">
+        <p>Novo por aqui?</p>
+        <a routerLink="/cadastro">Crie a sua conta</a>
+      </div>
     </form>
-    </div>
-     
-    </div>
-    
+  </div>
+</div>

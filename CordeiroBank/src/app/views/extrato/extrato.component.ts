@@ -3,18 +3,15 @@ import { Transferencia } from 'src/app/transferencia';
 import { TransferenciasService } from 'src/app/services/transferencias.service';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
-
-
 @Component({
   selector: 'app-extrato',
   templateUrl: './extrato.component.html',
-  styleUrls: ['./extrato.component.css']
+  styleUrls: ['./extrato.component.css'],
 })
 export class ExtratoComponent implements OnInit {
+  transferencias: any[];
 
-  transferencias: any[]
-
-  constructor(private transferenciasService: TransferenciasService) { }
+  constructor(private transferenciasService: TransferenciasService) {}
 
   ngOnInit(): void {
     this.transferenciasService
@@ -24,5 +21,4 @@ export class ExtratoComponent implements OnInit {
         this.transferencias = transferencias;
       });
   }
-
-  }
+}

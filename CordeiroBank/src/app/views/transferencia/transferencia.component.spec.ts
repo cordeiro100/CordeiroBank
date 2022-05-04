@@ -8,9 +8,8 @@ describe('TransferenciaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransferenciaComponent ]
-    })
-    .compileComponents();
+      declarations: [TransferenciaComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

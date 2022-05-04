@@ -7,19 +7,17 @@ import { LoginComponent } from './views/login/login.component';
 import { ProfileComponent } from './views/profile/profile.component';
 import { TransferenciaComponent } from './views/transferencia/transferencia.component';
 
-
-
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "login", component: LoginComponent},
-  {path: "cadastro", component: CadastroComponent},
-  {path: "transferencia", component: TransferenciaComponent},
-  {path: "profile", component: ProfileComponent},
-  {path: "extrato", component: ExtratoComponent}
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'transferencia', component: TransferenciaComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'extrato', component: ExtratoComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

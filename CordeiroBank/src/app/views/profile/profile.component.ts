@@ -47,10 +47,10 @@ export class ProfileComponent implements OnInit {
       });
   }
 
-  transferir(form: NgForm) {
+  transferir() {
     this.transferenciasService
-      .addTransferencia(form.value)
-      .then(() => form.reset());
+      .addTransferencia(this.transferenciaForm.value)
+      .then(() => this.transferenciaForm.reset());
 
     this.saldo = this.saldo - this.valor;
   }

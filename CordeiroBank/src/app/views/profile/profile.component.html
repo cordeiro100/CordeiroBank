@@ -25,7 +25,7 @@
     <h1 class="saldo">O seu saldo atual é de R${{ saldo }}</h1>
     <div class="aside">
       <div class="formulario">
-        <form #transfereForm="ngForm" (ngSubmit)="transferir(transfereForm)">
+        <form #transfereForm="ngForm" [formGroup]="transferenciaForm" (ngSubmit)="transferir()" > 
           <a routerLink="/"
             ><img src="assets/logo.png" alt="Foto LogoTipo CordeiroBank"
           /></a>
@@ -36,8 +36,13 @@
             id="destino"
             name="destino"
             placeholder=" Ex: 2415"
-            [(ngModel)]="destino"
+            formControlName="destino"
+            [(ngModel)]="destino"ddd
           />
+          <small *ngIf="transferenciaForm.get('destino')?.errors?.['required']" class="text-danger d-block mt-2">
+            Uma conta de 4 dígitos é necessária
+          </small>
+      
 
           <label for="valor">Digite o valor da transferência:</label>
           <input
@@ -45,10 +50,16 @@
             id="valor"
             name="valor"
             placeholder="Ex: 500,00"
+            formControlName="valor"
             [(ngModel)]="valor"
           />
+          <small *ngIf="transferenciaForm.get('valor')?.errors?.['required']" class="text-danger d-block mt-2">
+            Um valor é necessário
+          </small>
 
-          <button type="submit">Transferir</button>
+      
+
+          <button  id="botao-login "type="submit" [disabled]="!transferenciaForm.valid">Logar</button>
         </form>
       </div>
     </div>

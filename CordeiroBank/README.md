@@ -1,3 +1,17 @@
+Cordeiro Bank tem como principal objetivo criar uma página de banco utilizando o framework Angular.
+
+Na página Home apresenta alguns serviços para o cliente.
+
+Para acessar a pagina de profile e serviços pessoas do cliente, é necessário efetuar um login.
+
+Caso não tenha uma conta é necessário criar.
+
+Na página de Profile o cliente tem serviçoes de poder realizar transferências para outras contas fazendo com que o saldo atual seja reduzido pelo valor transferido.
+
+
+Toda transação realizada será salva no Extrato do Usuário.
+
+
 # CordeiroBank
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
